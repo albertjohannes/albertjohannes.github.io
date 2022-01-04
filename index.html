@@ -468,9 +468,9 @@
         })
         .then((data) => {
           // Work with JSON data here
-          var updatedAt = data.updated_at;
+          var tempUpdatedAt = data.updated_at;
+          var updatedAt = new Date(tempUpdatedAt);
           document.getElementById('updatedAt').innerHTML += updatedAt;
-          console.log(updatedAt);
         })
         .catch((err) => {
           // Do something for an error here
