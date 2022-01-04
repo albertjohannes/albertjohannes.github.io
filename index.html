@@ -40,6 +40,7 @@
             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Rewind 2021</a></li>
             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
             <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#hosting">Hosting</a></li>
           </ul>
         </div>
       </div>
@@ -223,6 +224,43 @@
                 Loading...
               </button>
             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hosting Section-->
+    <section class="page-section bg-primary text-white mb-0" id="hosting">
+      <div class="container" data-aos="fade">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">Hosting</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-pizza-slice"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="hosting-box">
+              <h4 class="hosting-name">Github Pages</h4>
+              <img src="assets/img/hosting/1.png" alt="Github Pages" class="hosting-img" />
+              <a href="https://albertjohannes.github.io/" target="_blank" class="btn btn-light hosting-detail-button">Visit</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="hosting-box">
+              <h4 class="hosting-name">Netlify</h4>
+              <img src="assets/img/hosting/2.png" alt="Netlify" class="hosting-img" />
+              <a href="https://albertjohannes.netlify.app/" target="_blank" class="btn btn-light hosting-detail-button">Visit</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="hosting-box">
+              <h4 class="hosting-name">Heroku</h4>
+              <img src="assets/img/hosting/3.png" alt="Heroku" class="hosting-img" />
+              <a href="https://albertjohannes.herokuapp.com/" target="_blank" class="btn btn-light hosting-detail-button">Visit</a>
+            </div>
           </div>
         </div>
       </div>
@@ -504,5 +542,17 @@
           .catch((error) => console.error('Error!', error.message));
       });
     </script>
+
+    <!-- Vanilla Tilt JS -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".hosting-box"), {
+        max: 35,
+        speed: 1000,
+        scale: 1,
+        glare: true
+      });
+    </script>
+
   </body>
 </html>
